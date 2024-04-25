@@ -6,8 +6,11 @@ export default {
     "./src/components/*.jsx"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        kfc: "#E5002B"
+      }
+    }
   },
-  plugins: [],
-}
-
+  plugins: []
+};
