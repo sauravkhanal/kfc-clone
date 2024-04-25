@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import Drawer from "react-modern-drawer";
+
 import { IoMenu, IoSearch } from "react-icons/io5";
 import { RiDiscountPercentLine } from "react-icons/ri";
 import { FaRegUserCircle } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 
-import "react-modern-drawer/dist/index.css";
+
+import SlideDrawer from "./SlideDrawer";
 
 export default function NavBar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -100,8 +101,8 @@ export default function NavBar() {
 							onClick={toggleDrawer}
 							className="h-8 w-8 hover:bg-gray-200 xl:hidden"
 						/>
-
-						<Drawer
+						<SlideDrawer open={isOpen} onClose={toggleDrawer} direction={"left"}/>
+						{/* <Drawer
 							open={isOpen}
 							onClose={toggleDrawer}
 							direction="left"
@@ -114,7 +115,7 @@ export default function NavBar() {
 								X
 							</span>
 							<h1>Here lies the menu items inside drawer</h1>
-						</Drawer>
+						</Drawer> */}
 					</span>
 				</div>
 			</div>
