@@ -1,6 +1,7 @@
 import ImageCarousel from "./components/ImageCarousel.jsx"
 import NavBar from "./components/NavBar.jsx"
 
+
 function App() {
   const arr = [
     "/src/assets/images/main1.webp",
@@ -12,6 +13,7 @@ function App() {
     <>
     <NavBar/>
     <ImageCarousel imageArray={arr}/>
+    
     </>
   )
 }
