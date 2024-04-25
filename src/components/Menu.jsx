@@ -93,11 +93,14 @@ function Menu() {
 
 	return (
 		<div className="my-10">
-			<h2 className="text-3xl font-bold pb-5 ">Explore Menu</h2>
-			<span className="flex items-center justify-center ">
-				<div className="text-2xl rounded-full shadow-md shadow-slate-500  border p-2 text-black bg-white hover:text-white hover:bg-kfc hover:border-kfc transition-colors relative left-1" onClick={scrollLeft}>
+			<span className="flex items-center justify-center">
+				<div
+					className="text-2xl rounded-full shadow-md shadow-slate-500  border p-2 text-black bg-white hover:text-white hover:bg-kfc hover:border-kfc transition-colors relative left-1"
+					onClick={scrollLeft}
+				>
 					<FaChevronLeft />
 				</div>
+
 				<div
 					ref={menuRef}
 					// width of container is 56 ie 224px, gap is 5 ie 20px
@@ -105,16 +108,26 @@ function Menu() {
 					//md: 768px = fits 3
 					//lg: 1024px 4
 					//xl 1280px 5
-					className=" flex flex-row overflow-x-scroll scroll-m-0 no-scrollbar w-56 sm:w-[478px] max-w:w-[712px] lg:w-[956px] xl:w-[1200px] "
+					className="flex flex-row overflow-x-scroll scroll-m-0 no-scrollbar w-56 sm:w-[468px] max-w:w-[712px] lg:w-[956px] xl:w-[1200px] "
 				>
-					<div className="flex flex-row flex-nowrap gap-5 flex-shrink-0">
-						{items.map(({ uri, name }, index) => (
-							<MenuItem key={index} imageURI={uri} name={name} />
-						))}
+					<div className="flex flex-col">
+						<h2 className="text-3xl font-bold pb-5">Explore Menu</h2>
+						<div className="flex flex-row flex-nowrap gap-5 flex-shrink-0">
+							{items.map(({ uri, name }, index) => (
+								<MenuItem
+									key={index}
+									imageURI={uri}
+									name={name}
+								/>
+							))}
+						</div>
 					</div>
 				</div>
-				<div className="text-2xl rounded-full shadow-md shadow-slate-500  border p-2 text-black bg-white hover:text-white hover:bg-kfc hover:border-kfc transition-colors relative right-1">
-					<FaChevronRight onClick={scrollRight}/>
+
+				<div className="text-2xl rounded-full shadow-md shadow-slate-500  border p-2 text-black bg-white hover:text-white hover:bg-kfc hover:border-kfc transition-colors relative right-1"
+				onClick={scrollRight} 
+				>
+					<FaChevronRight />
 				</div>
 			</span>
 		</div>
