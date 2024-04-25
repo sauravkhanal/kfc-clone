@@ -1,6 +1,7 @@
 import ImageCarousel from "./components/ImageCarousel.jsx"
+import MenuItem from "./components/MenuItem.jsx"
 import NavBar from "./components/NavBar.jsx"
-
+import Menu from "./components/Menu.jsx"
 
 function App() {
   const arr = [
@@ -13,7 +14,7 @@ function App() {
     <>
     <NavBar/>
     <ImageCarousel imageArray={arr}/>
-    
+    <Menu/>
     </>
   )
 }
