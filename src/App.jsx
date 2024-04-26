@@ -1,7 +1,9 @@
 import ImageCarousel from "./components/ImageCarousel.jsx"
-import MenuItem from "./components/MenuItem.jsx"
 import NavBar from "./components/NavBar.jsx"
 import Menu from "./components/Menu.jsx"
+import ProductGroup from "./components/ProductGroup.jsx"
+
+import { product, products1 } from "./objects.js"
 
 function App() {
   const arr = [
@@ -10,11 +12,16 @@ function App() {
     "/src/assets/images/main3.webp"
   ]
 
+
+
   return(
     <>
     <NavBar/>
     <ImageCarousel imageArray={arr}/>
     <Menu/>
+    <ProductGroup itemArray={product} groupTitle={"All Time Favorites"}/>
+    <ProductGroup itemArray={products1} groupTitle={"Top Selling Products"}/>
+
     </>
   )
 }
