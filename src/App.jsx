@@ -2,6 +2,7 @@ import ImageCarousel from "./components/ImageCarousel.jsx"
 import NavBar from "./components/NavBar.jsx"
 import Menu from "./components/Menu.jsx"
 import ProductGroup from "./components/ProductGroup.jsx"
+import Footer from "./components/Footer.jsx"
 
 import { product, products1 } from "./objects.js"
 
@@ -21,7 +22,7 @@ function App() {
     <Menu/>
     <ProductGroup itemArray={product} groupTitle={"All Time Favorites"}/>
     <ProductGroup itemArray={products1} groupTitle={"Top Selling Products"}/>
-
+    <Footer/>
     </>
   )
 }
