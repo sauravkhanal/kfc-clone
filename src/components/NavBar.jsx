@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 import { IoMenu, IoSearch } from "react-icons/io5";
 import { RiDiscountPercentLine } from "react-icons/ri";
-import { FaRegUserCircle } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 
 
@@ -23,7 +22,7 @@ export default function NavBar() {
 				<span className="flex flex-grow xl:flex-grow-0  items-center gap-8">
 					{/* kfc logo */}
 					<img
-						src="src/assets/images/kfc_logo.jpg"
+						src="https://assets.kfc.com.np/storage/uploads/images/Kfcheaderlogo/63e64b753ab7a.jpg"
 						alt="KFC logo"
 						className="h-14"
 					/>
