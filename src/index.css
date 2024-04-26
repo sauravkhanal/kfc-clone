@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,4 +14,13 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
   }
+}
+
+.font-national {
+    font-family: "National 2 Condensed Bold";
+}
+
+
+.font-pragati {
+    font-family: "Pragati Narrow", sans-serif;
 }
