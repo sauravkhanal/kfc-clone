@@ -28,8 +28,8 @@ function ImageCarousel({ imageArray }) {
                 {imageArray.map((_, index) => (
                     <button
                         key={index}
-                        className={` border h-3 w-3 rounded-full overflow-hidden ${
-                            index === currentIndex ? "bg-red-500" : "bg-gray-300"
+                        className={` border border-kfc h-3 w-3 rounded-full overflow-hidden ${
+                            index === currentIndex ? "bg-kfc" : "bg-white"
                         }`}
                         onClick={()=>setCurrentIndex(index)}
                     ></button>
