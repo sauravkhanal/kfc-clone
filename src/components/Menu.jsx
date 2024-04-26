@@ -94,7 +94,9 @@ function Menu() {
 	function Btn({ onClick, direction, className }) {
 		return (
 			<div
-				className={`text-2xl rounded-full shadow-md shadow-slate-500  border p-2 text-black bg-white hover:text-white hover:bg-kfc hover:border-kfc transition-colors relative ${direction === "left" ? "left-1" : "right-1"} ${className}`}
+				className={`text-2xl rounded-full shadow-md shadow-slate-500  border p-2 text-black bg-white hover:text-white hover:bg-kfc hover:border-kfc transition-colors relative ${
+					direction === "left" ? "left-1" : "right-1"
+				} ${className}`}
 				onClick={onClick}
 			>
 				{direction === "left" ? <FaChevronLeft /> : <FaChevronRight />}
@@ -104,18 +106,18 @@ function Menu() {
 
 	return (
 		<div className="my-10">
-			<div className="flex items-center px-16 sm:px-20 md:px-24 lg:px-36 ">
-				<h2 className="text-4xl font-bold pb-5 font-national flex flex-grow">
-					Explore Menu
-				</h2>
-				<span className="md:hidden flex gap-5">
-					<Btn onClick={scrollLeft} direction={"left"} />
-					<Btn onClick={scrollRight} />
-				</span>
+			<div className="flex justify-center items-center border border-kfc">
+				<Btn onClick={scrollLeft} direction={"left"} className={"md:hidden"}/>
+				<h2 className="text-4xl font-bold px-10 py-2 font-national">Explore Menu</h2>
+				<Btn onClick={scrollRight} className={"md:hidden"} />
 			</div>
 
 			<span className="flex items-center justify-center">
-				<Btn onClick={scrollLeft} direction={"left"} className="hidden md:block"/>
+				<Btn
+					onClick={scrollLeft}
+					direction={"left"}
+					className="hidden md:block"
+				/>
 				<div
 					ref={menuRef}
 					// width of container is 56 ie 224px, gap is 5 ie 20px
@@ -131,7 +133,7 @@ function Menu() {
 						))}
 					</div>
 				</div>
-				<Btn onClick={scrollRight} className="hidden md:block"/>
+				<Btn onClick={scrollRight} className="hidden md:block" />
 			</span>
 		</div>
 	);

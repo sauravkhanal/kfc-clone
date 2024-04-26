@@ -47,6 +47,12 @@ export const products1 = [
       "productImage": "https://assets.kfc.com.np/storage/uploads/images/product/6426889511a93.webp",
       "productPrice": "280"
     },
+    {
+      "productName": "Smoky Red 1pc",
+      "productDescription": "Spicy, red, grilled chcken 1 peece of colonels s",
+      "productImage": "https://assets.kfc.com.np/storage/uploads/images/product/6426889511a93.webp",
+      "productPrice": "280"
+    },
   ]
   
 
