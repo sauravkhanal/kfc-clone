@@ -8,7 +8,7 @@ function MenuItem({imageURI, name}) {
           alt={name}
           className=" hover:scale-110 transition"
         />
-        <p className="text-xl flex justify-center font-bold p-5">{name.toUpperCase()}</p>
+        <p className="text-xl flex justify-center font-bold p-5 font-roboto">{name.toUpperCase()}</p>
     </div>
   );
 }

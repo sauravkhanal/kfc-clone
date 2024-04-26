@@ -11,7 +11,7 @@ function Menu() {
 		},
 		{
 			uri: "https://assets.kfc.com.np/storage/uploads/images/category/641003c4791db.webp",
-			name: "Chicken Buckets",
+			name: "Chicken",
 		},
 		{
 			uri: "https://assets.kfc.com.np/storage/uploads/images/category/641003deb80c3.webp",
@@ -106,11 +106,12 @@ function Menu() {
 
 	return (
 		<div className="my-10">
-			<div className="flex justify-center items-center border border-kfc">
-				<Btn onClick={scrollLeft} direction={"left"} className={"md:hidden"}/>
-				<h2 className="text-4xl font-bold px-10 py-2 font-national">Explore Menu</h2>
-				<Btn onClick={scrollRight} className={"md:hidden"} />
+			<div className="flex justify-center items-center">
+				<Btn onClick={scrollLeft} direction={"left"} className={"md:hidden z-20"}/>
+				<h2 className="text-4xl font-bold px-10 py-2 font-national bg-white z-10">Explore Menu</h2>
+				<Btn onClick={scrollRight} className={"md:hidden z-20"} />
 			</div>
+				<hr className="relative -top-7"/>
 
 			<span className="flex items-center justify-center">
 				<Btn
