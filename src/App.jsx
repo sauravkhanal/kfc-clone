@@ -8,9 +8,9 @@ import { product, products1 } from "./objects.js"
 
 function App() {
   const arr = [
-    "/src/assets/images/main1.webp",
-    "/src/assets/images/main2.webp",
-    "/src/assets/images/main3.webp"
+    "https://assets.kfc.com.np/storage/uploads/images/banner/64c0ae1382bff.webp",
+    "https://assets.kfc.com.np/storage/uploads/images/banner/65a3949803a27.webp",
+    "https://assets.kfc.com.np/storage/uploads/images/banner/645e265ff3b8f.webp"
   ]
 
 

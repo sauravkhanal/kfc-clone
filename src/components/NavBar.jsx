@@ -90,7 +90,7 @@ export default function NavBar() {
 					<span className="flex gap-4">
 						<span className="flex gap-1 text-xl font-semibold hover:text-red-500">
 							<img
-								src="src/assets/images/basket.svg"
+								src="https://kfc.com.np/assets/images/basket.svg"
 								alt="basket"
 								className="w-8 h-8"
 							/>
