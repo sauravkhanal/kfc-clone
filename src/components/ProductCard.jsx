@@ -14,7 +14,7 @@ function ProductCard({
 				<img
 					src={productImage}
 					alt="tsp"
-					className="group-hover:scale-110 transition"
+					className="group-hover:scale-110 transition duration-[400ms]"
 				/>
 			</div>
 

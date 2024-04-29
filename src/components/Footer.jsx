@@ -19,8 +19,8 @@ function Footer() {
 				<a className="hover:text-kfc cursor-pointer">Feedback</a>
 			</span>
 			<span className="flex justify-center gap-10 py-10">
-                <img src="https://kfc.com.np/assets/images/icons/facebook-icon.svg" alt="facebook" />
-                <img src="https://kfc.com.np/assets/images/icons/instagram-icon.svg" alt="instagram" />
+                <img src="https://kfc.com.np/assets/images/icons/facebook-icon.svg"  className="hover:scale-105 transition" alt="facebook" />
+                <img src="https://kfc.com.np/assets/images/icons/instagram-icon.svg" className="hover:scale-105 transition"  alt="instagram" />
             </span>
 			<span className="flex justify-center gap-5">
 				<div className="bg-white w-8 h-20"></div>
@@ -29,7 +29,7 @@ function Footer() {
 			</span>
 			<span className="bg-[#14141c] text-white font-bold flex flex-col md:flex-row justify-between items-center px-20 py-3">
                 <p>©2024 <span className="text-kfc">KFC®</span>. All Rights Reserved</p>
-                <span className="flex flex-row "><p>Powered by <span >Coffee</span> from Gritfeat</p></span>
+                <span className="flex flex-row "><p>Powered By <span className="text-kfc">Coffee</span> from Gritfeat</p></span>
             </span>
 		</div>
 	);
