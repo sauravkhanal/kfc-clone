@@ -17,6 +17,7 @@ export default function NavBar() {
 	return (
 		<nav className="flex justify-center items-center border-b-2 h-[88px] p-[14px]  lg:px-40">
 			{/* <span className="fixed top-0 left-0 bg-red-500 opacity-25 h-20 w-20 md:bg-green-500 lg:bg-blue-500 xl:bg-yellow-500"></span> */}
+
 			{/* nav items */}
 			<div className="flex flex-grow items-center justify-between   gap-20 h-[1200px]:gap-40 ">
 				<span className="flex flex-grow xl:flex-grow-0  items-center gap-8">
@@ -38,7 +39,7 @@ export default function NavBar() {
 									className="w-5"
 								/>
 							</span>
-							<p className="pl-2 text-gray-400 text-xl">
+							<p className="pl-2 text-gray-400 ">
 								Kathmandu
 							</p>
 						</span>
@@ -52,7 +53,7 @@ export default function NavBar() {
 
 				{/* home menu locations */}
 
-				<span className="hidden xl:flex text-xl font-semibold  gap-6  min-w-80">
+				<span className="hidden xl:flex  font-semibold  gap-6  min-w-80">
 					<a href="" className="text-red-500">
 						Home
 					</a>
@@ -65,20 +66,20 @@ export default function NavBar() {
 				</span>
 
 				{/* icon container */}
-				<div className=" flex justify-between *:px-5">
+				<div className=" flex justify-between items-center *:px-5">
 					{/* search and offer */}
 					<span className="hidden xl:flex gap-5">
-						<IoSearch className="h-8 w-8 hover:text-red-500 mr-5" />
-						<span className="flex text-xl font-semibold  hover:text-red-500 gap-2">
-							<RiDiscountPercentLine className="h-8 w-8 " />
+						<IoSearch className="h-6 w-6 hover:text-red-500 mr-5" />
+						<span className="flex  font-semibold  hover:text-red-500 gap-2">
+							<RiDiscountPercentLine className="h-6 w-6 " />
 							<p>offer</p>
 						</span>
 					</span>
 
 					{/* login register */}
-					<span className="hidden xl:flex text-xl font-semibold  items-center gap-3">
+					<span className="hidden xl:flex  font-semibold  items-center gap-3">
 						<span className="flex hover:text-red-500 gap-1">
-							<CgProfile className="h-8 w-8 " />
+							<CgProfile className="h-6 w-6 " />
 							<p>Login</p>
 						</span>
 						<p>/</p>
@@ -87,7 +88,7 @@ export default function NavBar() {
 
 					{/* basket and menu icon*/}
 					<span className="flex gap-4">
-						<span className="flex gap-1 text-xl font-semibold hover:text-red-500">
+						<span className="flex gap-1  font-semibold hover:text-red-500">
 							<img
 								src="https://kfc.com.np/assets/images/basket.svg"
 								alt="basket"
