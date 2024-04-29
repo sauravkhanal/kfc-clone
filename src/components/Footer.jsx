@@ -11,12 +11,12 @@ function Footer() {
 				/>
 			</span>
 			<span className="text-white font-bold items-center md:justify-around flex px-10 flex-col md:flex-row">
-				<p>About Us</p>
-				<p>Privacy Policy</p>
-				<p>Disclaimer</p>
-				<p>Terms and Conditions</p>
-				<p>FAQs</p>
-				<p>Feedback</p>
+				<a className="hover:text-kfc cursor-pointer">About Us</a>
+				<a className="hover:text-kfc cursor-pointer">Privacy Policy</a>
+				<a className="hover:text-kfc cursor-pointer">Disclaimer</a>
+				<a className="hover:text-kfc cursor-pointer">Terms and Conditions</a>
+				<a className="hover:text-kfc cursor-pointer">FAQs</a>
+				<a className="hover:text-kfc cursor-pointer">Feedback</a>
 			</span>
 			<span className="flex justify-center gap-10 py-10">
                 <img src="https://kfc.com.np/assets/images/icons/facebook-icon.svg" alt="facebook" />
